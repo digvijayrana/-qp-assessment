@@ -1,6 +1,7 @@
 # grocery-system
 
-
+  **Note  Add your  Mongo URL in the Docker-Compose File  
+  
 # Clone the repository: 
  git clone <repository_url>
 

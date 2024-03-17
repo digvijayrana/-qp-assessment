@@ -1,0 +1,16 @@
+version: '3'
+services:
+  app:
+    image: Grocery-server:latest
+    environment:
+      - CONNECTION_URL = mongodb+srv://digvijayrana0696:ranathakur@cluster0.mlh1sas.mongodb.net/GrocerySystem?authSource=admin&replicaSet=atlas-146mlx-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true    
+    ports:
+      - '3000:3000'
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo:latest
+    environment:
+      - MONGO_INITDB_DATABASE= GrocerySystem
+    ports:
+      - '27018:27017'

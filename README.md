@@ -29,7 +29,8 @@
   
  # Example Usage
 
- curl -X POST -H "x-api-key: adminApiKey1" -d '{"name":"Apple", "price": 1.99, "quantity": 10}' http://localhost:3000/api/admin/add-item
+    curl --location 'http://localhost:3000/api/admin/view-items' \
+    --header 'api-key: adminApiKey1'
 
  
 # Feel free to adjust the details, formatting, and instructions according to your project's needs.
